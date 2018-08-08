@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -159,7 +161,7 @@
                                 <i class="mdi mdi-account-network"></i>
                                 <span class="hide-menu">Certificate</span>
                             </a>
-                        </li>  
+                        </li>    
 
                          <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="SubmittedDocument.html" aria-expanded="false">
@@ -228,7 +230,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">CERTIFICATE</h4>
+                        <h4 class="page-title">Dashboard</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
@@ -237,7 +239,7 @@
                                     <li class="breadcrumb-item">
                                         <a href="#">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                                 </ol>
                             </nav>
                         </div>
@@ -248,156 +250,56 @@
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="row">
-                    
-                    <!-- Column -->
-                    <div class="col-lg-9 col-xlg-9 col-md-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <form class="form-horizontal form-material">
-                                   
-                            <div class="table-responsive m-t-20">
+            
+            <div class="table-responsive m-t-20">
                                 <table class="table table-bordered table-responsive-lg">
                                     <thead>
                                         <tr>
-                                            <th scope="col" style="width: 5%">#</th>
-                                            <th scope="col" style="width: 35%">VietNamese Name</th>
-                                            <th scope="col">English Name</th>
-                                            <th scope="col" style="border: none;width: 25%"><button type="button" data-toggle="collapse" data-target="#add" class="btn btn-primary">ADD NEW</button></th>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Table header</th>
+                                            <th scope="col">Table header</th>
+                                            <th scope="col">Table header</th>
+                                            <th scope="col">Table header</th>
+                                            <th scope="col">Table header</th>
+                                            <th scope="col">Table header</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Việt Nam</td>
-                                            <td>VietNam</td>
-                                            <td scope="col" style="border: none"><button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#edit">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Thái Lan</td>
-                                            <td>ThaiLand</td>
-                                            <td scope="col" style="border: none"><button type="button" class="btn btn-warning">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        
-
-                        
-
-                    </div>
-                    <!-- Column -->
-                    <div class="col-lg-3 col-xlg-3 col-md-3">
-                    <div class="collapse" id="add">
-                    <div class="card">
-                            <div class="card-body">
-                                <form class="form-horizontal form-material">
-                                   
-                                
-                                    <div class="form-group">
-                                        <label class="col-md-12">ID</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Input ID" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">VietNamese Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Input VietNamese Name" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">English Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Input English Name" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-sm-12" align="center">
-                                            <button class="btn btn-success">ADD NEW CERTIFICATE</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xlg-3 col-md-3">
-                    <div class="collapse" id="edit">
-                    <div class="card">
-                            <div class="card-body">
-                                <form class="form-horizontal form-material">
-                                   
-                                
-                                    <div class="form-group">
-                                        <label class="col-md-12">ID</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="1" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">VietNamese Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Việt Nam" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">English Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="VietNam" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-sm-12" align="center">
-                                            <button class="btn btn-success">EDIT CERTIFICATE</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row -->
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by Nice admin. Designed and Developed by
-                <a href="https://wrappixel.com">WrapPixel</a>.
-            </footer>
+            
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -424,6 +326,11 @@
     <script src="../../dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

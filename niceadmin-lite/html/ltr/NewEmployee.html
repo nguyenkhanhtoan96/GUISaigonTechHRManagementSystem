@@ -159,7 +159,7 @@
                                 <i class="mdi mdi-account-network"></i>
                                 <span class="hide-menu">Certificate</span>
                             </a>
-                        </li>  
+                        </li>    
 
                          <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="SubmittedDocument.html" aria-expanded="false">
@@ -228,7 +228,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">CERTIFICATE</h4>
+                        <h4 class="page-title">Profile</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
@@ -258,123 +258,240 @@
                 <div class="row">
                     
                     <!-- Column -->
-                    <div class="col-lg-9 col-xlg-9 col-md-9">
+                    <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-body">
                                 <form class="form-horizontal form-material">
-                                   
-                            <div class="table-responsive m-t-20">
-                                <table class="table table-bordered table-responsive-lg">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" style="width: 5%">#</th>
-                                            <th scope="col" style="width: 35%">VietNamese Name</th>
-                                            <th scope="col">English Name</th>
-                                            <th scope="col" style="border: none;width: 25%"><button type="button" data-toggle="collapse" data-target="#add" class="btn btn-primary">ADD NEW</button></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Việt Nam</td>
-                                            <td>VietNam</td>
-                                            <td scope="col" style="border: none"><button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#edit">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Thái Lan</td>
-                                            <td>ThaiLand</td>
-                                            <td scope="col" style="border: none"><button type="button" class="btn btn-warning">EDIT</button> <button type="button" class="btn btn-danger">DELETE</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        
-
-                        
-
-                    </div>
-                    <!-- Column -->
-                    <div class="col-lg-3 col-xlg-3 col-md-3">
-                    <div class="collapse" id="add">
-                    <div class="card">
-                            <div class="card-body">
-                                <form class="form-horizontal form-material">
-                                   
-                                
                                     <div class="form-group">
-                                        <label class="col-md-12">ID</label>
-                                        <div class="col-md-12">
+                                        <label class="col-md-3">ID</label>
+                                        <div class="col-md-3">
                                             <input type="text" placeholder="Input ID" class="form-control form-control-line">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-12">VietNamese Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Input VietNamese Name" class="form-control form-control-line">
+                                        <label class="col-md-5">First Name</label>
+                                        <div class="col-md-5">
+                                            <input type="text" placeholder="Input First Name" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+
+									<div class="form-group">
+                                        <label class="col-md-5">Last Name</label>
+                                        <div class="col-md-5">
+                                            <input type="text" placeholder="Input Last Name" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+
+									<div class="form-group">
+                                        <label class="col-sm-3">Select Gender</label>
+                                        <div class="col-sm-3">
+                                            <select class="form-control form-control-line">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-12">English Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Input English Name" class="form-control form-control-line">
+                                        <label class="col-md-4">Date Of Birth</label>
+                                        <div class="col-md-4">
+                                            <input type="date" placeholder="Chose Date Of Birth" class="form-control form-control-line">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
+                                        <label class="col-md-3">Personal ID</label>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="Input Personal ID" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label>ID Issue Place</label>
+                                    <select class="custom-select col-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">TPHCM</option>
+                                        <option value="2">HaNoi</option>
+                                        <option value="3">DaNang</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="example-email" class="col-md-6">Email</label>
+                                        <div class="col-md-6">
+                                            <input type="email" placeholder="Input Email" class="form-control form-control-line" name="example-email" id="example-email">
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="form-group">
+                                        <label class="col-md-3">Phone No</label>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder="Input Phone" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-8">Address</label>
+                                        <div class="col-md-8">
+                                            <input type="text" placeholder="Input Address" class="form-control form-control-line">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label>Country</label>
+                                    <select class="custom-select col-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">VietNam</option>
+                                        <option value="2">ThaiLand</option>
+                                        <option value="3">Singapo</option>
+                                    </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    <label>Province</label>
+                                    <select class="custom-select col-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">TPHCM</option>
+                                        <option value="2">Ha Noi</option>
+                                        <option value="3">Da Nang</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label>Ethic</label>
+                                    <select class="custom-select col-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Kinh</option>
+                                        <option value="2">Muong</option>
+                                        <option value="3">E De</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label>Degree</label>
+                                    <select class="custom-select col-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">University</option>
+                                        <option value="2">MA</option>
+                                        <option value="3">PhD</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="form-group" >
                                         <div class="col-sm-12" align="center">
-                                            <button class="btn btn-success">ADD NEW CERTIFICATE</button>
+                                            <button class="btn btn-success">ADD NEW EMPLOYEE</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    <div class="col-lg-3 col-xlg-3 col-md-3">
-                    <div class="collapse" id="edit">
-                    <div class="card">
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-4 col-xlg-3 col-md-5">
+                        <div class="card">
                             <div class="card-body">
-                                <form class="form-horizontal form-material">
+                                <center class="m-t-30"> <img src="../../assets/images/users/5.jpg" class="rounded-circle" width="150" />
+                                    <h4 class="card-title m-t-10">Select Picture</h4>
                                    
-                                
-                                    <div class="form-group">
-                                        <label class="col-md-12">ID</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="1" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">VietNamese Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Việt Nam" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-12">English Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="VietNam" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-sm-12" align="center">
-                                            <button class="btn btn-success">EDIT CERTIFICATE</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    
+                                </center>
                             </div>
                         </div>
+                        <div>
+                             <h3>CERTIFICATE</h3>   
+                            </div>
+                        <div class="card">
+                            <div class="form-group row p-t-20">
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">ISO</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">TOIEC</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">IELT</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>                            
+                            <div>
+                             <h3>SUBMITED DOCUMENT</h3>   
+                            </div>
+                        <div class="card">
+                            <div class="form-group row p-t-20">
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4">Health</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                            <label class="custom-control-label" for="customCheck5">CMND</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                            <label class="custom-control-label" for="customCheck6">Hokhau</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                         </div>
+                            <div>
+                             <h3>POSITION</h3>   
+                            </div>
+                        <div class="card">
+                            <div class="form-group row p-t-20">
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                            <label class="custom-control-label" for="customCheck7">Truong ban cong nghe</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                            <label class="custom-control-label" for="customCheck8">Truong phong</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                            <label class="custom-control-label" for="customCheck9">Nhan vien phong 1</label>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                        </div>
+
+                        <div>
+                             <h3>SPECIALIZATION</h3>   
+                            </div>
+                        <div class="card">
+                            <div class="form-group row p-t-20">
+                                    <div class="col-sm-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                            <label class="custom-control-label" for="customCheck10">ISO</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                            <label class="custom-control-label" for="customCheck11">TOIEC</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                            <label class="custom-control-label" for="customCheck12">IELT</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div> 
+
                     </div>
+
+                    <!-- Column -->
                 </div>
                 <!-- Row -->
                 <!-- ============================================================== -->
