@@ -21,6 +21,25 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
@@ -230,7 +249,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">EMPLOYEE</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
@@ -252,45 +271,58 @@
             <!-- ============================================================== -->
             
             <div class="table-responsive m-t-20">
-                                <table class="table table-bordered table-responsive-lg">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                        <input type="text" class="form-control" style="width: 50%" placeholder="Search &amp; enter">
+                                </div>
+            </div>
+            <ul>
+                <li><a href="#home">Name</a></li>
+                <li><a href="#about">Phone</a></li>
+                <li><a href="#news">Position</a></li>
+                <li><a href="#contact">Country</a></li>
+                <li><a href="#about">Specialization</a></li>
+            </ul>
+            <div class="table-responsive m-t-20">
+                                <table class="table table-bordered table-responsive-lg" align="align-items-center">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Table header</th>
-                                            <th scope="col">Table header</th>
-                                            <th scope="col">Table header</th>
-                                            <th scope="col">Table header</th>
-                                            <th scope="col">Table header</th>
-                                            <th scope="col">Table header</th>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Picture</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Gender</th>
+                                            <th scope="col">BirthDay</th>
+                                            <th scope="col">Personal ID</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col" style="border: none;"><button type="button" class="btn btn-primary">ADD NEW</button></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
+                                            <th scope="row">NV1</th>
+                                            <td><img src="../../assets/images/users/1.jpg" width="50px" height="50px"></td>
+                                            <td>Toan</td>
+                                            <td>Nguyen Khanh</td>
+                                            <td>Male</td>
+                                            <td>05/06/1996</td>
+                                            <td>025581262</td>
+                                            <td>nguyenkhanhtoan5696@gmail.com</td>
+                                            <td>152 To Ky, Thoi Tam Thon, Hoc Mon</td>
+                                            <td scope="col" style="border: none;"><button type="button" class="btn btn-warning">EDIT</button><button type="button" class="btn btn-danger">DELETE</button></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
+                                            <th scope="row">NV2</th>
+                                            <td><img src="../../assets/images/users/1.jpg" width="50px" height="50px"></td>
+                                            <td>Toan</td>
+                                            <td>Nguyen Khanh</td>
+                                            <td>Male</td>
+                                            <td>05/06/1996</td>
+                                            <td>025581262</td>
+                                            <td>nguyenkhanhtoan5696@gmail.com</td>
+                                            <td>152 To Ky, Thoi Tam Thon, Hoc Mon</td>
+                                            <td scope="col" style="border: none;"><button type="button" class="btn btn-warning">EDIT</button><button type="button" class="btn btn-danger">DELETE</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
